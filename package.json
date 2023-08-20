@@ -1,6 +1,6 @@
 {
   "name": "@shiron4710/eslint-config",
-  "version": "1.3.3",
+  "version": "1.4.0",
   "description": "Config of ESLint for me.",
   "main": "index.js",
   "scripts": {
