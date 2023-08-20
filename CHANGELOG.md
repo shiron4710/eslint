@@ -1,5 +1,22 @@
 # Changelog
 
+## [1.4.0](https://github.com/shiron-dev/eslint-config/compare/v1.3.3...v1.4.0) (2023-08-20)
+
+
+### Features
+
+* add LICENSE ([05003e7](https://github.com/shiron-dev/eslint-config/commit/05003e74ccb7bdaf53b1b401d5ccb75a3b8933bb))
+* update README.md ([ac70804](https://github.com/shiron-dev/eslint-config/commit/ac708044f652748a2f329b0f2637147ff1e90297))
+
+
+### Bug Fixes
+
+* **deps:** update dependency @typescript-eslint/eslint-plugin to ^5.59.11 ([c4cd6af](https://github.com/shiron-dev/eslint-config/commit/c4cd6afcf15f6e973c1d7d40bb49ecf4f6e60e81))
+* **deps:** update dependency eslint-plugin-jest to ^27.2.2 ([ca7d3d5](https://github.com/shiron-dev/eslint-config/commit/ca7d3d5aa5ff98591638c3b5ae7fed3f9ba76eff))
+* **deps:** update dependency eslint-plugin-n to ^16.0.1 ([79ee176](https://github.com/shiron-dev/eslint-config/commit/79ee176c9acfb74db969e8a03adf71fa0d1626dd))
+* **deps:** update eslint ([4b3d01f](https://github.com/shiron-dev/eslint-config/commit/4b3d01f6703c77187779e7e27a2a2c1c556e223b))
+* rm standard-with-typescript ([d35f013](https://github.com/shiron-dev/eslint-config/commit/d35f01399bd2f4cd0ee703d4ffeb31d5da6a4604))
+
 ## [1.3.3](https://github.com/shiron4710/eslint-config/compare/v1.3.2...v1.3.3) (2023-06-11)
 
 
