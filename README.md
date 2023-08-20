@@ -7,17 +7,49 @@ This is shiron's personal ESLint configuration for TypeScript projects.
 To use this configuration, you can install it via npm:
 
 ```bash
-npm install --save-dev @shiron4710/eslint-config
+pnpm install -D @shiron-dev/eslint-config
 ```
 
 ## Usage
 
-Once installed, you can extend this configuration in your `.eslintrc.js` file:
+Add the following to your `.eslintrc.json` or `.eslintrc.js`:
+
+```json
+{
+  "extends": [
+    "@shiron-dev/eslint-config",
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
+}
+```
 
 ```js
 module.exports = {
-  extends: ["@shiron4710"],
+  extends: ["@shiron-dev/eslint-config"],
 };
+```
+
+## Rules
+
+- typescript(default)
+- prettier
+- jest
+- next
+- react
+- storybook
+
+If you want to use only some of the rules, you can specify them as follows:
+
+`{rule}` is the name of the rule.
+```json
+{
+  "extends": [
+    "@shiron-dev/eslint-config",
+    "@shiron-dev/eslint-config/{rule}",
+  ]
+}
 ```
 
 ## License
