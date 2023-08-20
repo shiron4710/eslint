@@ -1,5 +1,5 @@
 {
-  "name": "@shiron4710/eslint-config",
+  "name": "@shiron-dev/eslint-config",
   "version": "1.4.0",
   "description": "Config of ESLint for me.",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "lint": "eslint . && prettier . --check",
     "lint:fix": "eslint --fix . && prettier . --write"
   },
-  "author": "shiron4710",
+  "author": "shiron-dev",
   "license": "MIT",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^6.4.0",
