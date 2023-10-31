@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/shiron-dev/eslint-config/compare/v1.4.0...v1.5.0) (2023-10-31)
+
+
+### Features
+
+* rename project ([ec9c652](https://github.com/shiron-dev/eslint-config/commit/ec9c652804fa3ac5f7d1c831da70c7c93b3e65fe))
+
 ## [1.4.0](https://github.com/shiron-dev/eslint-config/compare/v1.3.3...v1.4.0) (2023-08-20)
 
 
