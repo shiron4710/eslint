@@ -10,7 +10,7 @@
   "author": "shiron-dev",
   "license": "MIT",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.1",
     "eslint-config-prettier": "^9.0.0",
     "eslint-import-resolver-typescript": "^3.6.1",
     "eslint-plugin-import": "^2.29.0",
