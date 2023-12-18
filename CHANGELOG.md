@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.1](https://github.com/shiron-dev/eslint-config/compare/v1.5.0...v1.5.1) (2023-12-18)
+
+
+### Miscellaneous Chores
+
+* release 1.5.1 ([5c290b5](https://github.com/shiron-dev/eslint-config/commit/5c290b55790f18955178515a665f2b07c05c0c8e))
+
 ## [1.5.0](https://github.com/shiron-dev/eslint-config/compare/v1.4.0...v1.5.0) (2023-10-31)
 
 
