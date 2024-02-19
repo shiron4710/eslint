@@ -18,7 +18,7 @@ dependencies:
     specifier: ^2.29.1
     version: 2.29.1(@typescript-eslint/parser@6.4.0)(eslint-import-resolver-typescript@3.6.1)(eslint@8.56.0)
   eslint-plugin-jest:
-    specifier: ^27.8.0
+    specifier: ^27.9.0
     version: 27.9.0(@typescript-eslint/eslint-plugin@6.21.0)(eslint@8.56.0)(typescript@5.0.4)
   eslint-plugin-n:
     specifier: ^16.6.2
