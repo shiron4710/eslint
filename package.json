@@ -3,6 +3,10 @@
   "version": "1.5.4",
   "description": "Config of ESLint for me.",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shiron-dev/eslint-config.git"
+  },
   "scripts": {
     "lint": "eslint . && prettier . --check",
     "lint:fix": "eslint --fix . && prettier . --write"
