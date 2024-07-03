@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.4](https://github.com/shiron-dev/eslint-config/compare/eslint-config-v1.5.3...eslint-config-v1.5.4) (2024-07-03)
+
+
+### Miscellaneous Chores
+
+* release 1.5.4 ([#169](https://github.com/shiron-dev/eslint-config/issues/169)) ([29b066f](https://github.com/shiron-dev/eslint-config/commit/29b066f757483b2e86c858a7caccc4be7d85e01d))
+
 ## [1.5.3](https://github.com/shiron-dev/eslint-config/compare/eslint-config-v1.5.2...eslint-config-v1.5.3) (2024-07-03)
 
 
