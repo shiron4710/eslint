@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.2](https://github.com/shiron-dev/eslint-config/compare/v1.5.1...v1.5.2) (2024-07-03)
+
+
+### Bug Fixes
+
+* **react:** fix react jsx ([b885d05](https://github.com/shiron-dev/eslint-config/commit/b885d05d3729099b4c8301edc5ec8a50ba217a5d))
+
 ## [1.5.1](https://github.com/shiron-dev/eslint-config/compare/v1.5.0...v1.5.1) (2023-12-18)
 
 
