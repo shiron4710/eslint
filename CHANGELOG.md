@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.5](https://github.com/shiron-dev/eslint-config/compare/eslint-config-v1.5.4...eslint-config-v1.5.5) (2024-07-03)
+
+
+### Bug Fixes
+
+* package.json ([#171](https://github.com/shiron-dev/eslint-config/issues/171)) ([a1e6b17](https://github.com/shiron-dev/eslint-config/commit/a1e6b17bf2b09bb5f61aba8f04f5f0bb6e55bc6e))
+
 ## [1.5.4](https://github.com/shiron-dev/eslint-config/compare/eslint-config-v1.5.3...eslint-config-v1.5.4) (2024-07-03)
 
 
