@@ -27,7 +27,7 @@ importers:
         specifier: ^16.6.2
         version: 16.6.2(eslint@8.57.0)
       eslint-plugin-promise:
-        specifier: ^6.5.1
+        specifier: ^6.6.0
         version: 6.6.0(eslint@8.57.0)
       eslint-plugin-react:
         specifier: ^7.35.0
