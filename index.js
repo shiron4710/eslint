@@ -32,5 +32,6 @@ module.exports = {
     "comma-dangle": ["error", "always-multiline"],
     semi: ["error", "always"],
     indent: ["error", 2],
+    "key-spacing": ["error", { beforeColon: false, afterColon: true }],
   },
 };
