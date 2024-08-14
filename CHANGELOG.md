@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/shiron-dev/eslint-config/compare/eslint-config-v1.5.5...eslint-config-v1.6.0) (2024-08-14)
+
+
+### Features
+
+* add indent rule ([#181](https://github.com/shiron-dev/eslint-config/issues/181)) ([b56e9d0](https://github.com/shiron-dev/eslint-config/commit/b56e9d06d712de2d96754b86505f6a3ac025047f))
+
 ## [1.5.5](https://github.com/shiron-dev/eslint-config/compare/eslint-config-v1.5.4...eslint-config-v1.5.5) (2024-07-03)
 
 
