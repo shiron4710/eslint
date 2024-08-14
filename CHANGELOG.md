@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.7.0](https://github.com/shiron-dev/eslint-config/compare/eslint-config-v1.6.0...eslint-config-v1.7.0) (2024-08-14)
+
+
+### Features
+
+* add key-spacing rule ([#183](https://github.com/shiron-dev/eslint-config/issues/183)) ([2d0c5a2](https://github.com/shiron-dev/eslint-config/commit/2d0c5a2e9fb3cca5d873d499a9e5190a670e4d17))
+
 ## [1.6.0](https://github.com/shiron-dev/eslint-config/compare/eslint-config-v1.5.5...eslint-config-v1.6.0) (2024-08-14)
 
 

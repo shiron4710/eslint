@@ -1,6 +1,6 @@
 {
   "name": "@shiron-dev/eslint-config",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "Config of ESLint for me.",
   "main": "index.js",
   "repository": {
