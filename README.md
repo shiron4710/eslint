@@ -1,58 +1,162 @@
-# shiron's ESLint Config
+# @shiron-dev/eslint-config
 
-This is shiron's personal ESLint configuration for TypeScript projects.
+[![npm](https://img.shields.io/npm/v/@shiron-dev/eslint-config?color=444&label=)](https://npmjs.com/package/@shiron-dev/eslint-config)
 
-## Installation
+> Thanks to [@antfu/eslint-config](https://github.com/antfu/eslint-config), the source of this eslint-config customization!
 
-To use this configuration, you can install it via npm:
-
-```bash
-pnpm install -D @shiron-dev/eslint-config
-```
+- Auto fix for formatting (aimed to be used standalone **without** Prettier)
+- Reasonable defaults, best practices, only one line of config
+- Designed to work with TypeScript, JSX, Vue, JSON, YAML, Toml, Markdown, etc. Out-of-box.
+- Opinionated, but [very customizable](#customization)
+- [ESLint Flat config](https://eslint.org/docs/latest/use/configure/configuration-files-new), compose easily!
+- Optional [React](#react), [Svelte](#svelte), [UnoCSS](#unocss), [Astro](#astro), [Solid](#solid) support
+- Optional [formatters](#formatters) support for formatting CSS, HTML, XML, etc.
+- **Style principle**: Minimal for reading, stable for diff, consistent
+  - Sorted imports, dangling commas
+  - Single quotes, no semi
+  - Using [ESLint Stylistic](https://github.com/eslint-stylistic/eslint-stylistic)
+- Respects `.gitignore` by default
+- Requires ESLint v9.5.0+
 
 ## Usage
 
-Add the following to your `.eslintrc.json` or `.eslintrc.js`:
+### Starter Wizard
+
+We provided a CLI tool to help you set up your project, or migrate from the legacy config to the new flat config with one command.
+
+```bash
+pnpm dlx @shiron-dev/eslint-config@latest
+```
+
+### Manual Install
+
+If you prefer to set up manually:
+
+```bash
+pnpm i -D eslint @shiron-dev/eslint-config
+```
+
+And create `eslint.config.mjs` in your project root:
+
+```js
+// eslint.config.mjs
+import shiron from "@shiron-dev/eslint-config";
+
+export default shiron();
+```
+
+<details>
+<summary>
+Combined with legacy config:
+</summary>
+
+If you still use some configs from the legacy eslintrc format, you can use the [`@eslint/eslintrc`](https://www.npmjs.com/package/@eslint/eslintrc) package to convert them to the flat config.
+
+```js
+import { FlatCompat } from "@eslint/eslintrc";
+// eslint.config.mjs
+import shiron from "@shiron-dev/eslint-config";
+
+const compat = new FlatCompat();
+
+export default shiron(
+  {
+    ignores: [],
+  },
+
+  // Legacy config
+  ...compat.config({
+    extends: [
+      "eslint:recommended",
+      // Other extends...
+    ],
+  })
+
+  // Other flat configs...
+);
+```
+
+> Note that `.eslintignore` no longer works in Flat config, see [customization](#customization) for more details.
+
+</details>
+
+### Add script for package.json
+
+For example:
 
 ```json
 {
-  "extends": [
-    "@shiron-dev/eslint-config"
-  ],
-  "parserOptions": {
-    "project": "./tsconfig.json"
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   }
 }
 ```
 
-```js
-module.exports = {
-  extends: ["@shiron-dev/eslint-config"],
-};
-```
+## IDE Support (auto fix on save)
 
-## Rules
+<details>
+<summary>🟦 VS Code support</summary>
 
-- typescript(default)
-- prettier
-- jest
-- next
-- react
-- storybook
+<br>
 
-If you want to use only some of the rules, you can specify them as follows:
+Install [VS Code ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
-`{rule}` is the name of the rule.
+Add the following settings to your `.vscode/settings.json`:
 
-```json
+```jsonc
 {
-  "extends": [
-    "@shiron-dev/eslint-config",
-    "@shiron-dev/eslint-config/{rule}"
+  // Disable the default formatter, use eslint instead
+  "prettier.enable": false,
+  "editor.formatOnSave": false,
+
+  // Auto fix
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
+  },
+
+  // Silent the stylistic rules in you IDE, but still auto fix them
+  "eslint.rules.customizations": [
+    { "rule": "style/*", "severity": "off", "fixable": true },
+    { "rule": "format/*", "severity": "off", "fixable": true },
+    { "rule": "*-indent", "severity": "off", "fixable": true },
+    { "rule": "*-spacing", "severity": "off", "fixable": true },
+    { "rule": "*-spaces", "severity": "off", "fixable": true },
+    { "rule": "*-order", "severity": "off", "fixable": true },
+    { "rule": "*-dangle", "severity": "off", "fixable": true },
+    { "rule": "*-newline", "severity": "off", "fixable": true },
+    { "rule": "*quotes", "severity": "off", "fixable": true },
+    { "rule": "*semi", "severity": "off", "fixable": true }
+  ],
+
+  // Enable eslint for all supported languages
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "yaml",
+    "toml",
+    "xml",
+    "gql",
+    "graphql",
+    "astro",
+    "svelte",
+    "css",
+    "less",
+    "scss",
+    "pcss",
+    "postcss"
   ]
 }
 ```
 
-## License
+</details>
 
-MIT License
+<details>
