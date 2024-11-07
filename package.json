@@ -25,7 +25,7 @@
   "scripts": {
     "build": "tsup --format esm,cjs --clean --dts",
     "stub": "tsup --format esm",
-    "dev": "npx @eslint/config-inspector --config eslint.config.ts",
+    "dev": "npx @pn --config eslint.config.ts",
     "build:inspector": "pnpm build && npx @eslint/config-inspector build",
     "watch": "tsup --format esm,cjs --watch",
     "lint": "eslint --flag unstable_ts_config .",
@@ -64,7 +64,8 @@
     "simple-git-hooks": "^2.11.1",
     "svelte": "^5.1.11",
     "tsup": "^8.3.5",
-    "vitest": "^2.1.4"
+    "vitest": "^2.1.4",
+    "wrangler": "^3.85.0"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
