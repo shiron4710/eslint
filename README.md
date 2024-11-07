@@ -17,7 +17,7 @@ Add the following to your `.eslintrc.json` or `.eslintrc.js`:
 ```json
 {
   "extends": [
-    "@shiron-dev/eslint-config",
+    "@shiron-dev/eslint-config"
   ],
   "parserOptions": {
     "project": "./tsconfig.json"
@@ -28,7 +28,7 @@ Add the following to your `.eslintrc.json` or `.eslintrc.js`:
 ```js
 module.exports = {
   extends: ["@shiron-dev/eslint-config"],
-};
+}
 ```
 
 ## Rules
@@ -43,11 +43,12 @@ module.exports = {
 If you want to use only some of the rules, you can specify them as follows:
 
 `{rule}` is the name of the rule.
+
 ```json
 {
   "extends": [
     "@shiron-dev/eslint-config",
-    "@shiron-dev/eslint-config/{rule}",
+    "@shiron-dev/eslint-config/{rule}"
   ]
 }
 ```
