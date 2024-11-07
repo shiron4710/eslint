@@ -2,7 +2,6 @@
   "name": "@shiron-dev/eslint-config",
   "type": "module",
   "version": "1.7.0",
-  "packageManager": "pnpm@9.12.3",
   "description": "Config of ESLint for me.",
   "author": "shiron-dev",
   "license": "MIT",
