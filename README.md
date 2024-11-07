@@ -4,20 +4,6 @@
 
 > Thanks to [@antfu/eslint-config](https://github.com/antfu/eslint-config), the source of this eslint-config customization!
 
-- Auto fix for formatting (aimed to be used standalone **without** Prettier)
-- Reasonable defaults, best practices, only one line of config
-- Designed to work with TypeScript, JSX, Vue, JSON, YAML, Toml, Markdown, etc. Out-of-box.
-- Opinionated, but [very customizable](#customization)
-- [ESLint Flat config](https://eslint.org/docs/latest/use/configure/configuration-files-new), compose easily!
-- Optional [React](#react), [Svelte](#svelte), [UnoCSS](#unocss), [Astro](#astro), [Solid](#solid) support
-- Optional [formatters](#formatters) support for formatting CSS, HTML, XML, etc.
-- **Style principle**: Minimal for reading, stable for diff, consistent
-  - Sorted imports, dangling commas
-  - Single quotes, no semi
-  - Using [ESLint Stylistic](https://github.com/eslint-stylistic/eslint-stylistic)
-- Respects `.gitignore` by default
-- Requires ESLint v9.5.0+
-
 ## Usage
 
 ### Starter Wizard
