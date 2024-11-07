@@ -28,7 +28,7 @@ Add the following to your `.eslintrc.json` or `.eslintrc.js`:
 ```js
 module.exports = {
   extends: ["@shiron-dev/eslint-config"],
-}
+};
 ```
 
 ## Rules

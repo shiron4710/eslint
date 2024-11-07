@@ -1,7 +1,7 @@
 // @ts-expect-error missing types
-import styleMigrate from "@stylistic/eslint-plugin-migrate"
+import styleMigrate from "@stylistic/eslint-plugin-migrate";
 
-import shiron from "./src"
+import shiron from "./src";
 
 export default shiron(
   {
@@ -35,4 +35,4 @@ export default shiron(
       "style-migrate/migrate": ["error", { namespaceTo: "style" }],
     },
   },
-)
+);

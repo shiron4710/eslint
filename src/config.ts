@@ -1,6 +1,6 @@
-import type { TypedFlatConfigItem } from "@antfu/eslint-config"
-import type { Linter } from "eslint"
-import type { Awaitable, FlatConfigComposer } from "eslint-flat-config-utils"
+import type { TypedFlatConfigItem } from "@antfu/eslint-config";
+import type { Linter } from "eslint";
+import type { Awaitable, FlatConfigComposer } from "eslint-flat-config-utils";
 
 export const shironConfigs: Awaitable<TypedFlatConfigItem | TypedFlatConfigItem[] | FlatConfigComposer<any, any> | Linter.Config[]>[] = [
   {
@@ -9,6 +9,10 @@ export const shironConfigs: Awaitable<TypedFlatConfigItem | TypedFlatConfigItem[
         "error",
         "double",
       ],
+      "style/semi": [
+        "error",
+        "always",
+      ],
     },
   },
-]
+];
