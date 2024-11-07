@@ -9,3 +9,5 @@ function shiron(options?: OptionsConfig & Omit<TypedFlatConfigItem, "files">, ..
   return antfu({ ...shironOptions, ...options }, ...shironConfigs, ...userConfigs)
 }
 export default shiron
+
+export * from "@antfu/eslint-config";
