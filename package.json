@@ -31,7 +31,6 @@
     "watch": "tsup --format esm,cjs --watch",
     "lint": "eslint --flag unstable_ts_config .",
     "lint:fix": "eslint --flag unstable_ts_config . --fix",
-    "typegen": "esno scripts/typegen.ts",
     "prepack": "pnpm build",
     "release": "bumpp && pnpm publish",
     "test": "vitest",
