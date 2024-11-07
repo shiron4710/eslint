@@ -9,6 +9,7 @@ permissions:
   contents: write
   pull-requests: write
   id-token: write
+  pages: write
 
 jobs:
   release-please:
@@ -22,24 +23,37 @@ jobs:
       - name: Release please
         uses: googleapis/release-please-action@v4
         id: release
+
+  pages-publish:
+    needs: release-please
+    if: ${{ needs.release-please.outputs.release-created }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shiron-dev/actions/setup-node@v1.1.0
+      - name: Install package
+        run: pnpm install --frozen-lockfile
+      - name: Run build
+        run: pnpm run build:inspector
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./.eslint-config-inspector
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
   npm-publish:
     needs: release-please
     if: ${{ needs.release-please.outputs.release-created }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: latest
-          run_install: false
-      - name: Setup node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18
-          cache: pnpm
+      - uses: shiron-dev/actions/setup-node@v1.1.0
       - name: Install package
         run: pnpm install --frozen-lockfile
+      - name: Build package
+        run: pnpm run build
       - name: Set publishing config
         run: pnpm config set '//registry.npmjs.org/:_authToken' "${NODE_AUTH_TOKEN}"
         env:
