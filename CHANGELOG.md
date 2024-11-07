@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/shiron-dev/eslint-config/compare/eslint-config-v1.7.0...eslint-config-v2.0.0) (2024-11-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* support eslint flat config ([#211](https://github.com/shiron-dev/eslint-config/issues/211))
+
+### Features
+
+* support eslint flat config ([#211](https://github.com/shiron-dev/eslint-config/issues/211)) ([48ecb65](https://github.com/shiron-dev/eslint-config/commit/48ecb655a102371fe5f0c0c9fe709406051e4706))
+
 ## [1.7.0](https://github.com/shiron-dev/eslint-config/compare/eslint-config-v1.6.0...eslint-config-v1.7.0) (2024-08-14)
 
 
