@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/shiron-dev/eslint-config/compare/eslint-config-v2.0.0...eslint-config-v2.0.1) (2024-11-07)
+
+
+### Bug Fixes
+
+* fix bin file ([#216](https://github.com/shiron-dev/eslint-config/issues/216)) ([7fcb547](https://github.com/shiron-dev/eslint-config/commit/7fcb547f1dffdcb6f1a095cddbadeec5a48357b8))
+
 ## [2.0.0](https://github.com/shiron-dev/eslint-config/compare/eslint-config-v1.7.0...eslint-config-v2.0.0) (2024-11-07)
 
 
