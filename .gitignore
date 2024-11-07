@@ -129,4 +129,11 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+*.lerna_backup
+_fixtures
+
+.temp
+.history
+
+src/typegen.d.ts
 .eslint-config-inspector
