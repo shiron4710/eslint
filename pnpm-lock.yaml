@@ -79,7 +79,7 @@ importers:
         specifier: ^2.11.1
         version: 2.11.1
       svelte:
-        specifier: ^5.1.14
+        specifier: ^5.1.15
         version: 5.1.16
       tsup:
         specifier: ^8.3.5
