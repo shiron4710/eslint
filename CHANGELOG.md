@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/shiron-dev/eslint-config/compare/eslint-config-v2.0.1...eslint-config-v2.1.0) (2024-11-15)
+
+
+### Features
+
+* default enable formatter ([#225](https://github.com/shiron-dev/eslint-config/issues/225)) ([b77fe05](https://github.com/shiron-dev/eslint-config/commit/b77fe05d6aada37aac1c6258e839e1f829357051))
+
 ## [2.0.1](https://github.com/shiron-dev/eslint-config/compare/eslint-config-v2.0.0...eslint-config-v2.0.1) (2024-11-07)
 
 
