@@ -54,7 +54,7 @@
     "eslint-plugin-svelte": "^2.46.1",
     "eslint-typegen": "^0.3.2",
     "esno": "^4.8.0",
-    "execa": "^9.5.1",
+    "execa": "^9.5.2",
     "fast-glob": "^3.3.2",
     "fs-extra": "^11.2.0",
     "jiti": "^2.4.1",
