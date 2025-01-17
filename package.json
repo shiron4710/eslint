@@ -24,7 +24,7 @@
   "scripts": {
     "build": "tsup --format esm,cjs --clean --dts",
     "stub": "tsup --format esm",
-    "dev": "npx @pn --config eslint.config.ts",
+    "dev": "npx @eslint/config-inspector --config eslint.config.ts",
     "build:inspector": "pnpm build && npx @eslint/config-inspector build",
     "watch": "tsup --format esm,cjs --watch",
     "lint": "eslint --flag unstable_ts_config .",
