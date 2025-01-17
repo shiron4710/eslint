@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.1](https://github.com/shiron-dev/eslint-config/compare/eslint-config-v2.1.0...eslint-config-v2.1.1) (2025-01-17)
+
+
+### Bug Fixes
+
+* **deps:** update eslint ([#336](https://github.com/shiron-dev/eslint-config/issues/336)) ([8e6fc98](https://github.com/shiron-dev/eslint-config/commit/8e6fc98a1345b6d9469e228a17dedde8779838c0))
+
 ## [2.1.0](https://github.com/shiron-dev/eslint-config/compare/eslint-config-v2.0.1...eslint-config-v2.1.0) (2024-11-15)
 
 
